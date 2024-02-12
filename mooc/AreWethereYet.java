@@ -2,20 +2,22 @@ package mooc;
 
 import java.util.Scanner;
 
-public class CarryOn {
+public class AreWethereYet {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Shall we continue");
-            System.out.println();
-            String input = scanner.nextLine();
-            if (input.equals("no")) {
+            System.out.println("Give a number:");
+            int command = Integer.valueOf(scanner.nextLine());
+            if (command == 4) {
                 break;
             }
 
         }
+
         scanner.close();
+
     }
 
 }
